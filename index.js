@@ -7,6 +7,8 @@ const express = require('express'),
 const CANVAS_ROWS = 100;
 const CANVAS_COLS = 100;
 
+const port = process.env.PORT || 3000;
+
 var canvas = [];
 for(var row = 0; row < CANVAS_ROWS; row++){
     canvas[row] = [];
@@ -17,7 +19,7 @@ for(var row = 0; row < CANVAS_ROWS; row++){
 
 app.use(express.static("public"));
 
-const uri = "mongodb+srv://pogjameschamp:pogjameschamp@cluster0.vgagxdh.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://poggy1:JFvZZlDjMznnQNcD@pog1.bz4dont.mongodb.net/?retryWrites=true&w=majority"
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let pixelCollection;
@@ -70,7 +72,7 @@ client.connect()
           console.log('User disconnected');
       });
     });
-    server.listen(3000, () => {
+    server.listen(port, () => {
       console.log('Server listening on port 3000');
     });
 }).catch(err => {

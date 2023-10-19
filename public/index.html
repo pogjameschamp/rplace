@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <!-- The controls where our users will enter the coords and color to place. -->
-    <div class="controls">
-      X: <input type="number" min="0" max="50" id="x-coord">
-      <br>
-      Y: <input type="number" min="0" max="50" id="y-coord">
-      <br>
+    <div id="color-buttons">
+      <button class="color-btn" style="background-color: red;" data-color="red"></button>
+      <button class="color-btn" style="background-color: lightcoral;" data-color="lightcoral"></button>
+
+      <button class="color-btn" style="background-color: blue;" data-color="blue"></button>
+      <button class="color-btn" style="background-color: lightblue;" data-color="lightblue"></button>
+
+      <button class="color-btn" style="background-color: green;" data-color="green"></button>
+      <button class="color-btn" style="background-color: lightgreen;" data-color="lightgreen"></button>
+
+      <button class="color-btn" style="background-color: yellow;" data-color="yellow"></button>
+      <button class="color-btn" style="background-color: lightgoldenrodyellow;" data-color="lightgoldenrodyellow"></button>
+
+      <button class="color-btn" style="background-color: purple;" data-color="purple"></button>
+      <button class="color-btn" style="background-color: lightsalmon;" data-color="lightsalmon"></button>
+
+      <button class="color-btn" style="background-color: lightgray;" data-color="white"></button>
+  </div>
+    <!-- <div class="controls">
       Color: <input type="color" id="color">
       <br>
       <button id="submit">Place Color</button>
-    </div>
+    </div> -->
 
     <canvas id="place" width="1000" height="1000"></canvas>
 

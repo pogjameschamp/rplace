@@ -1,6 +1,33 @@
 canvas {
-    margin-top: 10px;
-    height: 1000px;
-    width: 1000px;
-    border: 1px solid black;
-  }
+  margin-top: 10px;
+  height: 1000px;
+  width: 1000px;
+  border: 1px solid black;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;            /* Full viewport height */
+  margin: 0;                /* Remove default margin */
+  background-color: #f4f4f4;  /* Optional: background color for better contrast */
+}
+
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#color-buttons {
+display: flex;
+flex-direction: column; 
+justify-content: center;  /* Horizontally center items */
+align-items: center;      /* Vertically center items */
+
+}
